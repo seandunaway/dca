@@ -43,7 +43,6 @@ while (date_i < date_stop) {
 	number_trades++
 	total_shares += quantity_to_buy
 	total_invested += dca_amount
-	// cost_basis = ((cost_basis * (number_trades - 1)) + quote) / number_trades
 	cost_basis = total_invested / total_shares
 	pnl = (quote - cost_basis) * total_shares
 	let growth = (pnl / total_invested) * 100
